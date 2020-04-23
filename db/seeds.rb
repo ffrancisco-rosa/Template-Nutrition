@@ -5,3 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Destroying everything"
+
+
+WorkLocation.destroy_all
+
+
+puts "Creating Work Locations"
+
+WorkLocation.create(name: "Vila Petra", address: "Albufeira", nutri_id: 1 )
+WorkLocation.create(name: "HabiClinic", address: "Tunes", nutri_id: 1 )
+WorkLocation.create(name: "Trainning Center", address: "Quarteira", nutri_id: 1 )
+WorkLocation.create(name: "LsTrainning", address: "Olhão", nutri_id: 1 )
+WorkLocation.create(name: "PowerFit", address: "Faro", nutri_id: 1 )
+WorkLocation.create(name: "Lisboa", address: "Lisboa", nutri_id: 3 )
