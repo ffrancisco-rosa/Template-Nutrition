@@ -12,8 +12,8 @@
   </head>
 
   <body>
-    <% if user_signed_in? && controller_name == 'dashboards' %>
-      <%= "" %>
+    <% if user_signed_in? && current_user.role == 'nutri' %>
+      <%= render 'shared/sidebar' %>
     <% else %>
       <%= render 'shared/navbar' %>
      <% end %>
