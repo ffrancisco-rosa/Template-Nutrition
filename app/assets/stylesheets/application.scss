@@ -12,6 +12,11 @@
 @import "components/index";
 @import "pages/index";
 
+
+// nutri SCSS imports
+@import "nutri/nutri_index";
+
+
 body {
   background-color: $background;
 }
