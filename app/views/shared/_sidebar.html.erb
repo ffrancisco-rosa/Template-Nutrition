@@ -1,47 +1,42 @@
 <nav id="sidebar">
-            <div class="sidebar-header">
-                <%= image_tag('logo.png') %>
-            </div>
+  <div class="sidebar-header">
+    <%= image_tag('logo.png') %>
+  </div>
 
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#homeSubmenu" aria-expanded="false" class="lol" >
-                        <i class="fas fa-home"></i>
-                        <span class="menu-text">Início</span>
-                    </a>
-                </li>
-                <li>
-                  <%= link_to nutri_customers_path do  %>
-                      <i class="fas fa-briefcase"></i>
-                      <span class="menu-text">Clientes</span>
-                  <% end %>
-                    <a href="#">
-                        <i class="fas fa-briefcase"></i>
-                        <span class="menu-text">Clientes</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-image"></i>
-                       <span class="menu-text"> Calendário</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-question"></i>
-                       <span class="menu-text">Mensagens</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-paper-plane"></i>
-                        <span class="menu-text">About</span>
-                    </a>
-                </li>
-            </ul>
-
+  <ul class="list-unstyled components">
+    <li class="active">
+        <a href="#homeSubmenu" aria-expanded="false" class="lol" >
+          <i class="fas fa-home"></i>
+            <span class="menu-text">Início</span>
+        </a>
+    </li>
+    <li>
+      <%= link_to nutri_customers_path do  %>
+        <i class="fas fa-briefcase"></i>
+          <span class="menu-text">Clientes</span>
+      <% end %>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fas fa-image"></i>
+        <span class="menu-text"> Calendário</span>
+      </a>
+    </li>
+    <li>
+        <a href="#">
+          <i class="fas fa-question"></i>
+           <span class="menu-text">Mensagens</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+          <i class="fas fa-paper-plane"></i>
+            <span class="menu-text">About</span>
+        </a>
+    </li>
+  </ul>
           <!-- fixed stuff -->
-            <ul class="list-unstyled CTAs">
+  <ul class="list-unstyled CTAs">
 
-            </ul>
-        </nav>
+  </ul>
+</nav>
