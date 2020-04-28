@@ -1,8 +1,8 @@
 module Nutri
-  class CustomerController < ApplicationController
+  class CustomersController < ApplicationController
     before_action :find, only: [:show]
     def index
-      @customers = policy_scope(Customer)
+      @customers = policy_scope([:nutri, Customer])
     end
 
     def show

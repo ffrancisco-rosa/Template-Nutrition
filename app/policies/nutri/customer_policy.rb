@@ -2,7 +2,7 @@ class Nutri::CustomerPolicy < ApplicationPolicy
   # [...]
   class Scope < Scope
     def resolve
-      scope.all
+      scope.where(nutri: user)
     end
   end
 

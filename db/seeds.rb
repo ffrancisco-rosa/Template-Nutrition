@@ -10,6 +10,7 @@ puts "Destroying everything"
 
 
 WorkLocation.destroy_all
+Customer.destroy_all
 
 
 puts "Creating Work Locations"
@@ -20,3 +21,26 @@ WorkLocation.create(name: "Trainning Center", address: "Quarteira", nutri_id: 1 
 WorkLocation.create(name: "LsTrainning", address: "Olhão", nutri_id: 1 )
 WorkLocation.create(name: "PowerFit", address: "Faro", nutri_id: 1 )
 WorkLocation.create(name: "Lisboa", address: "Lisboa", nutri_id: 3 )
+
+puts "Creating Customers"
+
+15.times do Customer.create(
+  first_name: Faker::Name.unique.first_name,
+  last_name:Faker::Name.last_name,
+  age: rand(18..55),
+  email: Faker::Internet.email,
+  phone_number: Faker::PhoneNumber.phone_number,
+  nutri_id: 1
+)
+end
+
+5.times do Customer.create(
+  first_name: Faker::Name.unique.first_name,
+  last_name:Faker::Name.last_name,
+  age: rand(18..55),
+  email: Faker::Internet.email,
+  phone_number: Faker::PhoneNumber.phone_number,
+  nutri_id: 3,
+  consultation_spot_id: WorkLocation.ids.sample
+)
+end
